@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb)) rgb(var(--background-start-rgb));
+}
+
+/* make the buttons rounded and light blue */
+button {
+  @apply rounded bg-blue-500 text-white;
+  margin: 0.5rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+  /* color as facebook */
+  color: #3b5998;
+  /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  /* center vertically */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  @apply text-xl;
+}
+
+/* use twitter palette for body, buttons, p and h1 */
+body {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 21, 32, 43;
+  --background-end-rgb: 21, 32, 43;
+}
+
+button {
+  @apply bg-blue-400;
+}
+
+p {
+  @apply text-gray-300;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+  /* color as twitter */
+  color: #1da1f2;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+  /* color as twitter */
+  color: #1da1f2;
+}
+
+select {
+  @apply rounded bg-blue-500 text-white;
+  margin: 0.5rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+label,
+text,
+textarea {
+  @apply text-xl;
+  /* color as twitter */
+  color: #1da1f2;
+}
+
+input {
+  @apply rounded bg-blue-500 text-white;
+  margin: 0.5rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+text {
+  @apply text-2xl font-bold;
+  /* color as twitter */
+  color: #1da1f2;
+}
